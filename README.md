@@ -1,4 +1,3 @@
-
 Project Structure for [Orange HRM  Automation Framework](https://opensource-demo.orangehrmlive.com/web/index.php/auth/login)
 1.src/main/java
 This contains all reusable components and business logic.
