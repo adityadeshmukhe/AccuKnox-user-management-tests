@@ -1,3 +1,38 @@
+
+Project Structure for [Orange HRM  Automation Framework](https://opensource-demo.orangehrmlive.com/web/index.php/auth/login)
+1.src/main/java
+This contains all reusable components and business logic.
+base/
+BaseClass.java Initializes WebDriver, sets up browser etc.
+pages/ (Page Object Model POM)
+POM>XML
+com.Pages---->>>
+BaseClass.java
+LoginPage.java
+Navigate_to_Admin.java
+2.src/test/java
+com.TestCases---->>>
+Run_Test_Cases
+
+>>>How to run the test cases
+>>>Go to Run_Test_Case class
+and right click on screen and click on (Run AS)[TestNG Test]
+
+3.Selenium Version Used
+ <dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.35.0</version>
+</dependency>
+
+
+Problem Statment 2:
+2. Automated Backup Solution:---------->>>>>>>>
+com.AutomatedBackup---->>>>
+Application.java
+
+3. Log File Analyzer:--------->>>>>>>>
+
 #!/bin/bash
 
 # ================= Configuration =================
@@ -29,3 +64,4 @@ awk -F\" '{print $6}' $LOG_FILE | sort | uniq -c | sort -nr | head -5 >> $REPORT
 
 echo "===== End of Report =====" >> $REPORT_FILE
 echo "[*] Analysis completed. Report saved to $REPORT_FILE"
+
